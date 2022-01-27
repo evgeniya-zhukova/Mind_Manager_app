@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Admin.AdminQuestionnaireActivity">
+
+        <Button
+            android:id="@+id/btnLogoutAdmin"
+            android:layout_width="91dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="13dp"
+            android:text="Logout"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="50dp"
+            android:text="Mind Manager app"
+            android:textColor="#FF9800"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/lblTitleSuggestionsForCategory"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="Suggestions List"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#5A5555"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="256dp"
+                android:layout_height="23dp"
+
+                android:text="  Suggestion"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="49dp"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            tools:ignore="NestedScrolling" />
+
+        <TextView
+            android:id="@+id/lblError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/txtSuggestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestion:"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittxt_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/txtYoutubelink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Youtube link (optional):"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittxt_youtubelink"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnAddSuggestion"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="5dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>

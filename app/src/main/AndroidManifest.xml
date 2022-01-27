@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.gbc.comp3074.mind_manager_app">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Disclaimer" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".QuestionsActivity" android:parentActivityName=".WelcomeActivity"/>
+        <activity android:name=".RegisterActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity" android:parentActivityName=".WelcomeActivity"/>
+        <activity android:name=".SuggestionsActivity" android:parentActivityName=".WelcomeActivity"/>
+        <activity android:name=".Admin.AdminHomeActivity"/>
+        <activity android:name=".Reading.BookDisplayActivity"/>
+        <activity android:name=".Reading.BookDetails"/>
+
+        <activity android:name=".Admin.AdminCurrentUsersActivity" android:parentActivityName=".Admin.AdminHomeActivity"/>
+        <activity android:name=".Admin.AdminQuestionnaireActivity" android:parentActivityName=".Admin.AdminHomeActivity"/>
+        <activity android:name=".Admin.AdminAddNewQuestionActivity" android:parentActivityName=".Admin.AdminQuestionnaireActivity"/>
+        <activity android:name=".Admin.AdminAnswersActivity" android:parentActivityName=".Admin.AdminQuestionnaireActivity"/>
+        <activity android:name=".Admin.AdminMoodsForCategoryActivity" android:parentActivityName=".Admin.AdminCategoriesActivity"/>
+        <activity android:name=".Admin.AdminSuggestionsActivity" android:parentActivityName=".Admin.AdminMoodsForCategoryActivity"/>
+        <activity android:name=".Admin.AdminCategoriesActivity" android:parentActivityName=".Admin.AdminHomeActivity"/>
+        <activity android:name=".Games.CrosswordGameActivity" />
+        <activity android:name=".WelcomeActivity" android:parentActivityName=".SuggestionsActivity"/>
+        <activity android:name=".Music.VideoMain" android:parentActivityName=".SuggestionsActivity"/>
+        <activity android:name=".Movies.MovieMain" android:parentActivityName=".SuggestionsActivity"/>
+        <activity android:name=".MapActivity_Outdoors"/>
+        <activity android:name=".MapActivity_Sports"/>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider200717484986995"
+            android:name = "com.facebook.FacebookContentProvider"
+            android:exported="true" />
+    </application>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+</manifest>

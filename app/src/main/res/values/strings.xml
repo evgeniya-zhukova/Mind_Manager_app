@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mind-Manager-App</string>
+    <string name="facebook_app_id">200717484986995</string>
+    <string name="warning">To inform on policy, please review disclaimer in menu.</string>
+    <string-array name="roles_array">
+        <item>admin</item>
+        <item>user</item>
+    </string-array>
+</resources>

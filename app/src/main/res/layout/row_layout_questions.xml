@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="29dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="-"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/lblQuestions"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/browser_actions_title_color"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/btn_edit"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#00FDFEFF"
+        android:contentDescription="View"
+        android:src="@android:drawable/ic_menu_search"
+        android:textAlignment="center"
+        android:tint="#2196F3" />
+
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:layout_weight="1"
+        android:background="#00FFFFFF"
+        android:contentDescription="Delete"
+        android:src="@android:drawable/ic_delete"
+        android:textAlignment="center"
+        android:tint="#E91E63" />
+
+</LinearLayout>

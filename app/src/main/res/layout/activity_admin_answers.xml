@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Admin.AdminAnswersActivity">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="89dp"
+            android:layout_marginEnd="90dp"
+            android:text="Edit Question"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#B52525"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/lblTextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Text of Question*: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5A5555"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <EditText
+            android:id="@+id/lblNewQuestion"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="18dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toEndOf="@+id/lblTextQuestion"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="4dp"
+            android:text="Answer 1*: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5A5555"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTextQuestion" />
+
+        <EditText
+            android:id="@+id/lblAnswer1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="4dp"
+            android:ems="9"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/lblTextQuestion" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="406dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="  Rating*:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <EditText
+                android:id="@+id/lblAns1Bored"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="119dp"
+                tools:layout_editor_absoluteY="270dp" />
+
+            <EditText
+                android:id="@+id/lblAns1Energ"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="272dp" />
+
+            <EditText
+                android:id="@+id/lblAns1Happy"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="346dp"
+                tools:layout_editor_absoluteY="272dp" />
+
+            <EditText
+                android:id="@+id/lblAns1Sad"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="291dp"
+                tools:layout_editor_absoluteY="274dp" />
+
+            <EditText
+                android:id="@+id/lblAns1Tired"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="274dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Bored"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/lblEnerg"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Energ."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Happy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textViewSad"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  Sad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textViewTired"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tired"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="56dp"
+            android:text="Answer 2*: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5A5555"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <EditText
+            android:id="@+id/lblAnswer2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="4dp"
+            android:ems="9"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="406dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="  Rating*:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <EditText
+                android:id="@+id/lblAns2Bored"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="119dp"
+                tools:layout_editor_absoluteY="270dp" />
+
+            <EditText
+                android:id="@+id/lblAns2Energ"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="272dp" />
+
+            <EditText
+                android:id="@+id/lblAns2Happy"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="346dp"
+                tools:layout_editor_absoluteY="272dp" />
+
+            <EditText
+                android:id="@+id/lblAns2Sad"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="291dp"
+                tools:layout_editor_absoluteY="274dp" />
+
+            <EditText
+                android:id="@+id/lblAns2Tired"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="274dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Bored"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Energ."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Happy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  Sad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tired"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblConfirmPass"
+            android:layout_width="113dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="100dp"
+            android:text="Answer 3*: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#5A5555"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/lblAnswer3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="4dp"
+            android:ems="9"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/lblConfirmPass"
+            app:layout_constraintTop_toBottomOf="@+id/lblAnswer2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="406dp"
+            android:layout_height="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblConfirmPass">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:text="  Rating*:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <EditText
+                android:id="@+id/lblAns3Bored"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="119dp"
+                tools:layout_editor_absoluteY="270dp" />
+
+            <EditText
+                android:id="@+id/lblAns3Energ"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="272dp" />
+
+            <EditText
+                android:id="@+id/lblAns3Happy"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="346dp"
+                tools:layout_editor_absoluteY="272dp" />
+
+            <EditText
+                android:id="@+id/lblAns3Sad"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="291dp"
+                tools:layout_editor_absoluteY="274dp" />
+
+            <EditText
+                android:id="@+id/lblAns3Tired"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="185dp"
+                tools:layout_editor_absoluteY="274dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="Bored"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Energ."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Happy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView74"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  Sad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tired"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#5A5555"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="21dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="117dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="76dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblAnswer3" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="115dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSubmit"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".QuestionsActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mind Manager app"
+            android:textColor="#FF9800"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please answer a few questions for us"
+            android:textColor="@color/browser_actions_title_color"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/lblq1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="24sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtn_q1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer1" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer2" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblq2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="24sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtn_q2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer1" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer2" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblq3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 3"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="24sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtn_q3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer1" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer2" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblq4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 4"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="24sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbtn_q4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer1" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer2" />
+
+            <RadioButton
+                android:id="@+id/rbtn_q4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="answer3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
